@@ -1,0 +1,8 @@
+project: savantenvs/MP-SPDZ
+target: fuzz_gc_program_parse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gc_program_parse/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gc_program_parse
+    libfuzzer: true
